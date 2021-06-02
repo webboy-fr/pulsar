@@ -110,7 +110,7 @@ class Seeder
 	{
 		if (self::$faker === null && class_exists(Factory::class))
 		{
-			self::$faker = Factory::create();
+			self::$faker = Factory::create('fr_FR');
 		}
 
 		return self::$faker;

@@ -14,7 +14,7 @@ class MemberModel extends Model
 	protected $returnType           = 'App\Entities\Member';
 	protected $useSoftDeletes       = false;
 	protected $protectFields        = true;
-	protected $allowedFields        = [];
+	protected $allowedFields        = ['firstname', 'lastname', 'instrument'];
 
 	// Dates
 	protected $useTimestamps        = false;
